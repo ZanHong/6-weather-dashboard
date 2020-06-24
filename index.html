@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Weather Dashboard</title>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"/>
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.1/css/all.css" integrity="sha384-50oBUHEmvpQ+1lW4y57PTFmhCaXp0ML5d60M1M7uH2+nqUivzIebhndOJK28anvf" crossorigin="anonymous"/>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <header>
+        <h1>Weather Dashboard</h1>
+    </header>
+
+    <div class="container-fluid pt-1">
+        <div class="row">
+            <div class="col-md-3 bg-light">
+                <h5>Search for a City:</h5>
+                <form class="form-inline">
+                    <input type="text" class="form-control" id="search-term">
+                    <button class="btn btn-primary" id="searchBtn" type="submit">
+                        <i class="fas fa-search"></i>
+                    </button>
+                </form>
+                <div>
+                    <ul class="list-group" id="city-list"></ul>
+                </div>
+            </div>
+
+            <div class="col-md-9">
+                <div class="card">
+                    <div class="card-body" id="current-info">
+                        <div id="current-head"></div>
+                        <div id="current-temp"></div>
+                        <div id="current-humidity"></div>
+                        <div id="current-wind"></div>
+                        <div id="current-uv"></div>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-md-9">
+                        <h4>5-Day Forecast:</h4>
+                        <div id="forecast-cards">
+                            <div class="card forecast">
+                                <div class="card">
+                                    <div class="card-body">
+                                        <h5 class="card-title"></h5>
+                                        <span id="forecast-icon"></span>
+                                        <div id="forecast-temp-1"></div>
+                                        <div id="forecast-humidity-1"></div>
+                                    </div>
+                                </div>
+                                <div class="card">
+                                    <div class="card-body">
+                                        <h5 class="card-title"></h5>
+                                        <span id="forecast-icon"></span>
+                                        <div id="forecast-temp-2"></div>
+                                        <div id="forecast-humidity-2"></div>
+                                    </div>
+                                </div>
+                                <div class="card">
+                                    <div class="card-body">
+                                        <h5 class="card-title"></h5>
+                                        <span id="forecast-icon"></span>
+                                        <div id="forecast-temp-3"></div>
+                                        <div id="forecast-humidity-3"></div>
+                                    </div>
+                                </div>
+                                <div class="card">
+                                    <div class="card-body">
+                                        <h5 class="card-title"></h5>
+                                        <span id="forecast-icon"></span>
+                                        <div id="forecast-temp-4"></div>
+                                        <div id="forecast-humidity-4"></div>
+                                    </div>
+                                </div>
+                                <div class="card">
+                                    <div class="card-body">
+                                        <h5 class="card-title"></h5>
+                                        <span id="forecast-icon"></span>
+                                        <div id="forecast-temp-5"></div>
+                                        <div id="forecast-humidity-5"></div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+    <script src="https://code.jquery.com/jquery-3.4.1.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/moment.js/2.24.0/moment.min.js"></script>
+    <script type="text/javascript" src="script.js"></script>
+</body>
+
+</html>

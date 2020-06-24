@@ -1,0 +1,14 @@
+header {
+    color: #faf2f0;
+    background-color: #343a40;
+    text-align: center;
+    padding: 10px 0;
+}
+
+.container .row div h5 {
+    font-weight: bold;
+}
+
+#current-head {
+    padding-bottom: 10px;
+}
